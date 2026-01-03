@@ -1,0 +1,16 @@
+{
+  "name": "legend-yuvi-cookies-server",
+  "version": "1.0.0",
+  "description": "Facebook Messenger Bot with Permanent Session Login",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "fca-mafiya": "latest",
+    "ws": "^8.14.2"
+  },
+  "author": "LEGEND YUVI",
+  "license": "MIT"
+}
