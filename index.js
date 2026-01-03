@@ -389,8 +389,8 @@ app.get('/', (req, res) => {
     <body>
         <div class="container">
             <div class="header">
-                <h1>😘 LEGEND YUVI COOKIES SERVER 🚩</h1>
-                <div class="developer">DEVELOPER: S091P47 4L4</div>
+                <h1>🌟 RAJ COOKIES SERVER 🌟</h1>
+                <div class="developer">DEVELOPER: R4J M1SHR4</div>
                 <div class="developer">✅ PERMANENT SESSION LOGIN ✅</div>
             </div>
             
@@ -543,4 +543,5 @@ app.get('/', (req, res) => {
                 
                 reader.onload = function(e) {
                     const messages = e.target.result.split('\\n')
-                        .map(msg => msg.trim
+                        .map(msg => msg.trim())
+     
