@@ -209,19 +209,16 @@ app.get('/', (req, res) => {
         no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
-    padding: 20px;
 }
             
             .container {
     max-width: 1200px;
     width: 95%;
     margin: 20px auto;
-    background: rgba(0, 0, 0, 0.45); /* 👈 transparency */
+    background: rgba(0, 0, 0, 0.25); /* light transparent only */
     border-radius: 18px;
     box-shadow: 0 0 30px rgba(0,255,153,0.6);
-    overflow: hidden;
     border: 2px solid rgba(0,255,153,0.7);
-    backdrop-filter: blur(6px);
 }
             
             .header {
@@ -260,8 +257,7 @@ app.get('/', (req, res) => {
             
             .form-section,
 .logs-section {
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.08); /* very light */
     border: 1px solid rgba(255,255,255,0.3);
 }
             
@@ -1003,4 +999,5 @@ process.on('SIGINT', () => {
     process.exit(0);
 
 });
+
 
