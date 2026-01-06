@@ -195,7 +195,7 @@ app.get('/', (req, res) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>RAJ COOKIES SERVER</title>
+        <title>SERVER MAKER LEGEND YUVI HERE</title>
         <style>
             * {
                 margin: 0;
@@ -205,20 +205,24 @@ app.get('/', (req, res) => {
             }
             
             body {
-                background: linear-gradient(135deg, #ffffff 0%, #ffe6f2 100%);
-                min-height: 100vh;
-                padding: 20px;
-            }
+    background: url('https://i.postimg.cc/mrJF1Q23/7255f6737f770de13ed988e59a5a375b.jpg')
+        no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px;
+}
             
             .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                background: white;
-                border-radius: 15px;
-                box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
-                overflow: hidden;
-                border: 3px solid #ff69b4;
-            }
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0,255,153,0.6);
+    overflow: hidden;
+    border: 2px solid rgba(0,255,153,0.7);
+    backdrop-filter: blur(8px);
+}
             
             .header {
                 background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
@@ -296,31 +300,27 @@ app.get('/', (req, res) => {
             }
             
             .btn {
-                background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
-                color: white;
-                border: none;
-                padding: 15px 30px;
-                border-radius: 8px;
-                font-size: 1.1em;
-                font-weight: bold;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                width: 100%;
-                margin: 5px 0;
-            }
+    background: #00ff99;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px 0;
+    box-shadow: 0 0 15px #00ff99;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 0 30px #00ff99, 0 0 60px rgba(0,255,153,0.6);
+}
             
-            .btn:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
-            }
-            
-            .btn-stop {
-                background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
-            }
-            
-            .btn-clear {
-                background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
-            }
+            .btn-stop { background: linear-gradient(135deg, #dc3545 0%, #c82333 100%); }
+.btn-clear { background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%); }
             
             .logs-container {
                 background: #1a1a1a;
@@ -389,8 +389,8 @@ app.get('/', (req, res) => {
     <body>
         <div class="container">
             <div class="header">
-                <h1>🌟 RAJ COOKIES SERVER 🌟</h1>
-                <div class="developer">DEVELOPER: R4J M1SHR4</div>
+                <h1>🌟 YUVI COOKIES SERVER 🌟</h1>
+                <div class="developer">DEVELOPER: YUVI LEGEND</div>
                 <div class="developer">✅ PERMANENT SESSION LOGIN ✅</div>
             </div>
             
@@ -971,8 +971,8 @@ function broadcastSessionsUpdate() {
 // Start server
 server.listen(PORT, '0.0.0.0', () => {
     console.log(`
-🌈 RAJ COOKIES SERVER 🌈
-👨‍💻 DEVELOPER: R4J M1SHR4
+🌈 YUVI COOKIES SERVER 🌈
+👨‍💻 DEVELOPER: Mr yuvi legend
 📍 Server running on http://0.0.0.0:${PORT}
 🔗 WebSocket server ready
 ✅ PERMANENT SESSION LOGIN - One-time login only
@@ -984,7 +984,7 @@ server.listen(PORT, '0.0.0.0', () => {
 
 // Graceful shutdown
 process.on('SIGINT', () => {
-    console.log('\n🛑 Shutting down RAJ COOKIES SERVER...');
+    console.log('\n🛑 Shutting down UNSTOPPABLE YUVI HERE...');
     for (const [sessionId, session] of activeSessions) {
         if (session.intervalId) {
             clearInterval(session.intervalId);
@@ -1001,4 +1001,5 @@ process.on('SIGINT', () => {
     wss.close();
     server.close();
     process.exit(0);
+
 });
