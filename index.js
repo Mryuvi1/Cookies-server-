@@ -26,7 +26,7 @@ res.send(`<!DOCTYPE html>
 body{
 margin:0;
 font-family:Arial;
-background:url('https://i.imgur.com/8QZ7FQx.jpg') no-repeat center center fixed;
+background:url('https://i.postimg.cc/mrJF1Q23/7255f6737f770de13ed988e59a5a375b.jpg') no-repeat center center fixed;
 background-size:cover;
 }
 
